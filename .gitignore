@@ -4,6 +4,7 @@
 
 ## Misc
 *.DS_Store
+.swiftpm/
 
 ## User settings
 xcuserdata/
