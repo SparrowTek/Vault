@@ -164,6 +164,7 @@ struct KeychainItem {
         var query = [String : AnyObject]()
         query[kSecClass as String] = kSecClassGenericPassword
         query[kSecAttrService as String] = service as AnyObject?
+        query[kSecUseDataProtectionKeychain as String] = kCFBooleanTrue
         
         if let account = account {
             query[kSecAttrAccount as String] = account as AnyObject?
