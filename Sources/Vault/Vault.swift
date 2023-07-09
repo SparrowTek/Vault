@@ -7,10 +7,10 @@
 
 import Foundation
 
-public protocol KeychainConfiguration {
-    var serviceName: String { get set }
-    var accessGroup: String? { get set }
-    var accountName: String { get set }
+public struct KeychainConfiguration {
+    let serviceName: String
+    let accessGroup: String?
+    let accountName: String
 }
 
 public enum VaultError: Error {
