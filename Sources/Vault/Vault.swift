@@ -8,9 +8,9 @@
 import Foundation
 
 public struct KeychainConfiguration {
-    let serviceName: String
-    let accessGroup: String?
-    let accountName: String
+    public let serviceName: String
+    public let accessGroup: String?
+    public let accountName: String
 }
 
 public enum VaultError: Error {
