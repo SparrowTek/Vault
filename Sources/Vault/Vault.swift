@@ -11,6 +11,12 @@ public struct KeychainConfiguration {
     public let serviceName: String
     public let accessGroup: String?
     public let accountName: String
+    
+    public init(serviceName: String, accessGroup: String?, accountName: String) {
+        self.serviceName = serviceName
+        self.accessGroup = accessGroup
+        self.accountName = accountName
+    }
 }
 
 public enum VaultError: Error {
