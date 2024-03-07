@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct KeychainConfiguration {
+public struct KeychainConfiguration: Sendable {
     public let serviceName: String
     public let accessGroup: String?
     public let accountName: String
